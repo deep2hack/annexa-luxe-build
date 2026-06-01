@@ -9,7 +9,7 @@ const stats = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-32 lg:py-44 bg-background">
+    <section id="about" className="theme-light relative py-32 lg:py-44">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           <div className="lg:col-span-4">
