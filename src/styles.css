@@ -93,6 +93,42 @@
   ::selection { background: var(--gold); color: var(--ink); }
 }
 
+/* Light "ivory editorial" theme — apply to a section to flip the palette
+   without touching child components. Tokens stay semantic. */
+.theme-light {
+  --background: oklch(0.975 0.005 80);    /* ivory off-white */
+  --foreground: oklch(0.16 0.01 60);      /* rich near-black */
+  --ink: oklch(0.05 0 0);
+
+  --card: oklch(1 0 0);                   /* pure white cards */
+  --card-foreground: oklch(0.16 0.01 60);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0.01 60);
+
+  --primary: oklch(0.16 0.01 60);
+  --primary-foreground: oklch(0.98 0 0);
+
+  --secondary: oklch(0.94 0.01 75);
+  --secondary-foreground: oklch(0.16 0.01 60);
+
+  --muted: oklch(0.94 0.01 75);
+  --muted-foreground: oklch(0.42 0.02 70); /* warm gray */
+
+  --accent: oklch(0.62 0.12 70);           /* burnished gold for light bg */
+  --accent-foreground: oklch(0.98 0 0);
+
+  --gold: oklch(0.62 0.12 70);             /* deeper gold reads on white */
+  --gold-soft: oklch(0.72 0.10 75);
+  --champagne: oklch(0.55 0.10 65);        /* darker italic accent */
+
+  --border: oklch(0.16 0.01 60 / 12%);
+  --input: oklch(0.16 0.01 60 / 16%);
+  --ring: oklch(0.62 0.12 70);
+
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
 @layer utilities {
   .font-display { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.02em; }
   .font-sans   { font-family: var(--font-sans); }
