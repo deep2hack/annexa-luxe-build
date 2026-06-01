@@ -1,29 +1,53 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { Marquee } from "@/components/site/Marquee";
+import { About } from "@/components/site/About";
+import { Services } from "@/components/site/Services";
+import { Portfolio } from "@/components/site/Portfolio";
+import { Results } from "@/components/site/Results";
+import { Process } from "@/components/site/Process";
+import { Testimonials } from "@/components/site/Testimonials";
+import { CTA } from "@/components/site/CTA";
+import { Footer } from "@/components/site/Footer";
+import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Annexa Dynamics — Editorial Creative & Growth Studio" },
+      {
+        name: "description",
+        content:
+          "Annexa Dynamics is a luxury creative agency for real estate, fashion, hospitality and premium brands. Cinematic content, social strategy, Meta ads and lead generation.",
+      },
+      { property: "og:title", content: "Annexa Dynamics — Editorial Creative & Growth Studio" },
+      {
+        property: "og:description",
+        content:
+          "Cinematic content, social, Meta ads and lead generation for real estate, fashion, hospitality and premium brands.",
+      },
+      { property: "og:type", content: "website" },
     ],
   }),
-  component: Index,
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="bg-background text-foreground">
+      <Nav />
+      <Hero />
+      <Marquee />
+      <About />
+      <Services />
+      <Portfolio />
+      <Results />
+      <Process />
+      <Testimonials />
+      <CTA />
+      <Footer />
+      <WhatsAppFloat />
+    </main>
   );
 }
