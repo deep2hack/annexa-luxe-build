@@ -93,41 +93,49 @@
   ::selection { background: var(--gold); color: var(--ink); }
 }
 
-/* Light "ivory editorial" theme — apply to a section to flip the palette
-   without touching child components. Tokens stay semantic. */
-.theme-light {
-  --background: oklch(0.975 0.005 80);    /* ivory off-white */
-  --foreground: oklch(0.16 0.01 60);      /* rich near-black */
-  --ink: oklch(0.05 0 0);
-
-  --card: oklch(1 0 0);                   /* pure white cards */
-  --card-foreground: oklch(0.16 0.01 60);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.16 0.01 60);
-
-  --primary: oklch(0.16 0.01 60);
-  --primary-foreground: oklch(0.98 0 0);
-
-  --secondary: oklch(0.94 0.01 75);
-  --secondary-foreground: oklch(0.16 0.01 60);
-
-  --muted: oklch(0.94 0.01 75);
-  --muted-foreground: oklch(0.42 0.02 70); /* warm gray */
-
-  --accent: oklch(0.62 0.12 70);           /* burnished gold for light bg */
-  --accent-foreground: oklch(0.98 0 0);
-
-  --gold: oklch(0.62 0.12 70);             /* deeper gold reads on white */
-  --gold-soft: oklch(0.72 0.10 75);
-  --champagne: oklch(0.55 0.10 65);        /* darker italic accent */
-
-  --border: oklch(0.16 0.01 60 / 12%);
-  --input: oklch(0.16 0.01 60 / 16%);
-  --ring: oklch(0.62 0.12 70);
-
-  background-color: var(--background);
-  color: var(--foreground);
+/* Strategic white accents over the dark cinematic base */
+.spotlight-white { position: relative; }
+.spotlight-white::before {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 0%, rgba(255,255,255,0.06), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 85% 90%, rgba(255,255,255,0.04), transparent 60%);
+  pointer-events: none;
 }
+
+/* Floating ivory card sitting on the dark base */
+.card-ivory {
+  background: #f6f3ec;
+  color: #141414;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.05),
+    0 40px 80px -40px rgba(0,0,0,0.9),
+    0 0 0 1px rgba(255,255,255,0.06);
+}
+.card-ivory .ivory-muted { color: #5a544b; }
+.card-ivory .ivory-gold  { color: #8a6a1f; }
+
+/* Dark card with thin white hairline border + subtle white glow on hover */
+.card-outline-white {
+  background: color-mix(in oklab, #ffffff 3%, transparent);
+  border: 1px solid rgba(255,255,255,0.10);
+  transition: border-color .5s ease, background-color .5s ease, box-shadow .5s ease;
+}
+.card-outline-white:hover {
+  border-color: rgba(255,255,255,0.4);
+  background: color-mix(in oklab, #ffffff 6%, transparent);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 30px 80px -40px rgba(255,255,255,0.18);
+}
+
+/* Thin white divider */
+.hairline-white {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.55) 50%, transparent);
+  opacity: 0.6;
+}
+
+
 
 @layer utilities {
   .font-display { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.02em; }

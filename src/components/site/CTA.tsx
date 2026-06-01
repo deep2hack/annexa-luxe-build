@@ -32,7 +32,7 @@ export function CTA() {
             href={SITE.whatsapp}
             target="_blank"
             rel="noreferrer"
-            className="group inline-flex items-center gap-3 bg-gold text-ink px-8 py-5 text-xs uppercase tracking-[0.3em] hover:bg-champagne transition-all duration-500"
+            className="group inline-flex items-center gap-3 bg-white text-black px-8 py-5 text-xs uppercase tracking-[0.3em] hover:bg-champagne hover:text-ink transition-all duration-500"
           >
             <MessageCircle size={16} />
             Message Us On WhatsApp

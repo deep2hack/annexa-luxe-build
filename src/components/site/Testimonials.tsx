@@ -31,18 +31,18 @@ export function Testimonials() {
   const go = (d: number) => setI((p) => (p + d + reviews.length) % reviews.length);
 
   return (
-    <section className="theme-light relative py-32 lg:py-44">
-      <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
+    <section className="spotlight-white relative py-32 lg:py-44 bg-background overflow-hidden">
+      <div className="mx-auto max-w-[1200px] px-6 lg:px-10 relative">
         <div className="eyebrow mb-10">
           <span className="inline-block w-8 h-px bg-gold align-middle mr-3" />
           Clients
         </div>
 
-        <div className="relative">
-          <Quote className="absolute -top-6 -left-2 text-gold/20" size={80} />
+        <div className="card-ivory relative p-10 md:p-16 lg:p-20">
+          <Quote className="absolute top-8 left-8 ivory-gold opacity-30" size={80} />
 
-          <blockquote key={i} className="animate-[fade-in_.6s_ease-out]">
-            <p className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.15] tracking-tight text-balance text-foreground">
+          <blockquote key={i} className="animate-[fade-in_.6s_ease-out] relative">
+            <p className="font-display text-3xl md:text-5xl lg:text-6xl leading-[1.15] tracking-tight text-balance">
               "{r.quote}"
             </p>
           </blockquote>
@@ -53,29 +53,29 @@ export function Testimonials() {
                 {r.initials}
               </div>
               <div>
-                <div className="font-display text-xl text-foreground">{r.name}</div>
-                <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">
+                <div className="font-display text-xl">{r.name}</div>
+                <div className="text-xs uppercase tracking-[0.2em] ivory-muted mt-1">
                   {r.role}
                 </div>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="text-xs tracking-[0.3em] text-muted-foreground tabular-nums mr-4">
+              <div className="text-xs tracking-[0.3em] ivory-muted tabular-nums mr-4">
                 {String(i + 1).padStart(2, "0")}
-                <span className="mx-1 text-gold">/</span>
+                <span className="mx-1 ivory-gold">/</span>
                 {String(reviews.length).padStart(2, "0")}
               </div>
               <button
                 onClick={() => go(-1)}
-                className="h-12 w-12 border border-border hover:border-gold hover:text-gold transition-colors flex items-center justify-center"
+                className="h-12 w-12 border border-black/15 hover:border-black hover:bg-black hover:text-white transition-colors flex items-center justify-center"
                 aria-label="Previous"
               >
                 <ArrowLeft size={16} />
               </button>
               <button
                 onClick={() => go(1)}
-                className="h-12 w-12 border border-border hover:border-gold hover:text-gold transition-colors flex items-center justify-center"
+                className="h-12 w-12 border border-black/15 hover:border-black hover:bg-black hover:text-white transition-colors flex items-center justify-center"
                 aria-label="Next"
               >
                 <ArrowRight size={16} />
