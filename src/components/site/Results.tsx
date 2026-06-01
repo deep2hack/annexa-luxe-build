@@ -9,10 +9,7 @@ const results = [
 
 export function Results() {
   return (
-    <section className="theme-light relative py-32 lg:py-44 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none opacity-[0.06]"
-           style={{ backgroundImage: "radial-gradient(circle at 30% 30%, var(--gold) 0, transparent 50%)" }} />
-
+    <section className="spotlight-white relative py-32 lg:py-44 overflow-hidden bg-background">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 relative">
         <div className="text-center max-w-2xl mx-auto">
           <div className="eyebrow mb-6 inline-flex items-center justify-center">
@@ -20,18 +17,25 @@ export function Results() {
             Outcomes
             <span className="inline-block w-8 h-px bg-gold align-middle ml-3" />
           </div>
-          <h2 className="font-display text-5xl lg:text-7xl leading-[0.95] tracking-tight text-balance">
+          <h2 className="font-display text-5xl lg:text-7xl leading-[0.95] tracking-tight text-balance text-foreground">
             Numbers <span className="italic text-champagne">earned</span>, not promised.
           </h2>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-px bg-border">
-          {results.map((r) => (
-            <div key={r.label} className="bg-card p-10 lg:p-14 text-center shadow-[0_1px_40px_-20px_rgba(0,0,0,0.15)]">
-              <div className="font-display text-6xl lg:text-8xl text-foreground">
+        <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+          {results.map((r, idx) => (
+            <div
+              key={r.label}
+              className={`p-10 lg:p-14 text-center transition-transform duration-500 hover:-translate-y-1 ${
+                idx % 2 === 0
+                  ? "card-ivory"
+                  : "card-outline-white"
+              }`}
+            >
+              <div className={`font-display text-6xl lg:text-8xl ${idx % 2 === 0 ? "" : "text-foreground"}`}>
                 <Counter to={r.n} suffix={r.suffix} />
               </div>
-              <div className="mt-4 text-[10px] tracking-[0.3em] uppercase text-gold">
+              <div className={`mt-4 text-[10px] tracking-[0.3em] uppercase ${idx % 2 === 0 ? "ivory-gold" : "text-gold"}`}>
                 {r.label}
               </div>
             </div>

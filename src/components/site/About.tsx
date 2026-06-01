@@ -9,8 +9,8 @@ const stats = [
 
 export function About() {
   return (
-    <section id="about" className="theme-light relative py-32 lg:py-44">
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+    <section id="about" className="spotlight-white relative py-32 lg:py-44 bg-background overflow-hidden">
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-10 relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           <div className="lg:col-span-4">
             <div className="eyebrow mb-6">
@@ -35,11 +35,11 @@ export function About() {
           </div>
         </div>
 
-        <div className="hairline mt-24" />
+        <div className="hairline-white mt-24" />
 
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-5">
           {stats.map((s) => (
-            <div key={s.label} className="group">
+            <div key={s.label} className="card-outline-white group p-8 lg:p-10">
               <div className="font-display text-5xl lg:text-7xl text-foreground group-hover:text-gold transition-colors duration-500">
                 <Counter to={s.n} suffix={s.suffix} />
               </div>
