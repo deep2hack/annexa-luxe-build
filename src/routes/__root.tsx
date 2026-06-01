@@ -84,6 +84,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0A0A0A" },
+      { property: "og:title", content: "Annexa Dynamics" },
+      { name: "twitter:title", content: "Annexa Dynamics" },
+      { property: "og:description", content: "Editorial creative & growth studio for premium brands." },
+      { name: "twitter:description", content: "Editorial creative & growth studio for premium brands." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/83d29931-ddf9-41d8-aa8e-d3209b024516/id-preview-8f6adfdd--b87bd2ef-0302-433a-958c-b27725a2a715.lovable.app-1780352554931.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/83d29931-ddf9-41d8-aa8e-d3209b024516/id-preview-8f6adfdd--b87bd2ef-0302-433a-958c-b27725a2a715.lovable.app-1780352554931.png" },
     ],
     links: [
       {
