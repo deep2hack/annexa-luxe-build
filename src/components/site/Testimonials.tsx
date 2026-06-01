@@ -31,7 +31,7 @@ export function Testimonials() {
   const go = (d: number) => setI((p) => (p + d + reviews.length) % reviews.length);
 
   return (
-    <section className="relative py-32 lg:py-44 bg-card">
+    <section className="theme-light relative py-32 lg:py-44">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <div className="eyebrow mb-10">
           <span className="inline-block w-8 h-px bg-gold align-middle mr-3" />

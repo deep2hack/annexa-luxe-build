@@ -9,8 +9,8 @@ const results = [
 
 export function Results() {
   return (
-    <section className="relative py-32 lg:py-44 bg-card overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none opacity-[0.04]"
+    <section className="theme-light relative py-32 lg:py-44 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none opacity-[0.06]"
            style={{ backgroundImage: "radial-gradient(circle at 30% 30%, var(--gold) 0, transparent 50%)" }} />
 
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 relative">
@@ -27,7 +27,7 @@ export function Results() {
 
         <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-px bg-border">
           {results.map((r) => (
-            <div key={r.label} className="bg-card p-10 lg:p-14 text-center">
+            <div key={r.label} className="bg-card p-10 lg:p-14 text-center shadow-[0_1px_40px_-20px_rgba(0,0,0,0.15)]">
               <div className="font-display text-6xl lg:text-8xl text-foreground">
                 <Counter to={r.n} suffix={r.suffix} />
               </div>
