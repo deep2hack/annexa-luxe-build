@@ -35,15 +35,20 @@ export function About() {
           </div>
         </div>
 
-        <div className="hairline-white mt-24" />
+        <div className="mt-24 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-5">
-          {stats.map((s) => (
-            <div key={s.label} className="card-outline-white group p-8 lg:p-10">
-              <div className="font-display text-5xl lg:text-7xl text-foreground group-hover:text-gold transition-colors duration-500">
+        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+          {stats.map((s, idx) => (
+            <div
+              key={s.label}
+              className={`group p-8 lg:p-10 text-center transition-all duration-500 hover:-translate-y-1 ${
+                idx % 2 === 0 ? "card-ivory" : "card-outline-white"
+              }`}
+            >
+              <div className={`font-display text-5xl lg:text-7xl ${idx % 2 === 0 ? "" : "text-foreground group-hover:text-gold transition-colors duration-500"}`}>
                 <Counter to={s.n} suffix={s.suffix} />
               </div>
-              <div className="mt-4 text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+              <div className={`mt-4 text-[10px] tracking-[0.3em] uppercase ${idx % 2 === 0 ? "ivory-gold" : "text-gold"}`}>
                 {s.label}
               </div>
             </div>
