@@ -22,23 +22,30 @@ export function Nav() {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/70 backdrop-blur-xl border-b border-border" : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10 h-20 flex items-center justify-between">
+    <header className="fixed top-4 left-0 right-0 z-50 px-4 lg:px-6">
+      <div
+        className={`mx-auto max-w-[1400px] h-14 lg:h-[60px] rounded-2xl flex items-center justify-between pl-5 pr-3 lg:pl-7 lg:pr-4 transition-all duration-500 ${
+          scrolled
+            ? "bg-white/85 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.35)]"
+            : "bg-white/75 shadow-[0_8px_32px_-10px_rgba(0,0,0,0.25)]"
+        }`}
+        style={{
+          backdropFilter: "blur(20px) saturate(160%)",
+          WebkitBackdropFilter: "blur(20px) saturate(160%)",
+          border: "1px solid rgba(255,255,255,0.6)",
+        }}
+      >
         <a href="#top" className="flex items-baseline gap-2 group">
-          <span className="font-display text-2xl tracking-tight text-foreground">Annexa</span>
-          <span className="font-display italic text-gold text-lg">Dynamics</span>
+          <span className="font-display text-xl lg:text-2xl tracking-tight text-ink">Annexa</span>
+          <span className="font-display italic text-[var(--gold)] text-base lg:text-lg">Dynamics</span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-8 lg:gap-10">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-[11px] uppercase tracking-[0.25em] text-muted-foreground hover:text-foreground transition-colors underline-grow"
+              className="text-[11px] uppercase tracking-[0.25em] text-ink/70 hover:text-ink transition-colors underline-grow"
             >
               {l.label}
             </a>
@@ -49,13 +56,13 @@ export function Nav() {
           href={SITE.whatsapp}
           target="_blank"
           rel="noreferrer"
-          className="hidden md:inline-flex items-center gap-2 border border-gold/40 text-gold hover:bg-gold hover:text-ink px-5 py-2.5 text-[11px] uppercase tracking-[0.25em] transition-all duration-500"
+          className="hidden md:inline-flex items-center gap-2 bg-ink text-white hover:bg-[var(--gold)] hover:text-ink px-5 py-2.5 rounded-xl text-[11px] uppercase tracking-[0.25em] transition-all duration-500"
         >
           WhatsApp
         </a>
 
         <button
-          className="md:hidden text-foreground"
+          className="md:hidden text-ink"
           aria-label="menu"
           onClick={() => setOpen((v) => !v)}
         >
@@ -64,14 +71,21 @@ export function Nav() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+        <div
+          className="md:hidden mt-2 mx-auto max-w-[1400px] rounded-2xl bg-white/90 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.35)]"
+          style={{
+            backdropFilter: "blur(20px) saturate(160%)",
+            WebkitBackdropFilter: "blur(20px) saturate(160%)",
+            border: "1px solid rgba(255,255,255,0.6)",
+          }}
+        >
           <div className="px-6 py-6 flex flex-col gap-5">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm uppercase tracking-[0.25em] text-muted-foreground hover:text-foreground"
+                className="text-sm uppercase tracking-[0.25em] text-ink/80 hover:text-ink"
               >
                 {l.label}
               </a>
@@ -80,7 +94,7 @@ export function Nav() {
               href={SITE.whatsapp}
               target="_blank"
               rel="noreferrer"
-              className="mt-2 inline-flex items-center justify-center border border-gold/40 text-gold px-5 py-3 text-xs uppercase tracking-[0.25em]"
+              className="mt-2 inline-flex items-center justify-center bg-ink text-white rounded-xl px-5 py-3 text-xs uppercase tracking-[0.25em]"
             >
               Chat on WhatsApp
             </a>

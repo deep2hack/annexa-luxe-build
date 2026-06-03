@@ -91,17 +91,17 @@ export function Hero() {
               href={SITE.whatsapp}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-3 bg-gold text-ink px-7 py-4 text-xs uppercase tracking-[0.25em] hover:bg-champagne transition-all duration-500"
+              className="group relative inline-flex items-center gap-3 bg-gold text-ink px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] shadow-[0_10px_40px_-12px_rgba(212,175,55,0.55)] hover:shadow-[0_18px_60px_-12px_rgba(212,175,55,0.8)] hover:-translate-y-0.5 hover:bg-champagne transition-all duration-500"
             >
-              <MessageCircle size={16} />
+              <MessageCircle size={16} className="transition-transform duration-500 group-hover:rotate-[-6deg]" />
               Chat on WhatsApp
             </a>
             <a
               href="#work"
-              className="group inline-flex items-center gap-3 border border-foreground/40 text-foreground hover:border-gold hover:text-gold px-7 py-4 text-xs uppercase tracking-[0.25em] transition-all duration-500"
+              className="group relative inline-flex items-center gap-3 border border-foreground/40 text-foreground hover:border-foreground hover:text-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] bg-white/0 hover:bg-white/[0.06] hover:-translate-y-0.5 hover:shadow-[0_18px_60px_-20px_rgba(255,255,255,0.35)] backdrop-blur-sm transition-all duration-500"
             >
               View Our Work
-              <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight size={16} className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
         </div>
