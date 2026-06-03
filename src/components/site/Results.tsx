@@ -23,19 +23,15 @@ export function Results() {
         </div>
 
         <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
-          {results.map((r, idx) => (
+          {results.map((r) => (
             <div
               key={r.label}
-              className={`p-10 lg:p-14 text-center transition-transform duration-500 hover:-translate-y-1 ${
-                idx % 2 === 0
-                  ? "card-ivory"
-                  : "card-outline-white"
-              }`}
+              className="card-outline-white group p-10 lg:p-14 text-center transition-all duration-500 hover:-translate-y-1"
             >
-              <div className={`font-display text-6xl lg:text-8xl ${idx % 2 === 0 ? "" : "text-foreground"}`}>
+              <div className="font-display text-6xl lg:text-8xl text-foreground group-hover:text-gold transition-colors duration-500">
                 <Counter to={r.n} suffix={r.suffix} />
               </div>
-              <div className={`mt-4 text-[10px] tracking-[0.3em] uppercase ${idx % 2 === 0 ? "ivory-gold" : "text-gold"}`}>
+              <div className="mt-4 text-[10px] tracking-[0.3em] uppercase text-gold">
                 {r.label}
               </div>
             </div>
