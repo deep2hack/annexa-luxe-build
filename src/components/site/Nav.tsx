@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { SITE } from "@/lib/site";
-import logoAsset from "@/assets/afterlight-logo.png.asset.json";
+import logoAsset from "@/assets/afterlight-logo-wide.png.asset.json";
 
 const links = [
   { href: "#work", label: "Work" },
