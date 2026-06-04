@@ -38,24 +38,23 @@ export function Nav() {
       >
         <a
           href="#top"
-          className="relative flex items-center group shrink-0 h-full bg-black pl-4 lg:pl-6 pr-6 lg:pr-10"
-          style={{
-            clipPath: "polygon(0 0, 100% 0, calc(100% - 18px) 100%, 0 100%)",
-          }}
+          className="group flex items-center shrink-0 h-full pl-5 lg:pl-7 pr-2 select-none"
         >
-          <img
-            src={logoAsset.url}
-            alt="AfterLight Studios"
-            className="h-[78%] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
-          />
-          <span
-            aria-hidden
-            className="pointer-events-none absolute top-0 bottom-0 right-0 w-6"
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0) 100%)",
-            }}
-          />
+          <span className="flex items-baseline gap-[0.45em] leading-none">
+            <span
+              className="font-display text-ink text-[1.15rem] lg:text-[1.45rem] tracking-[0.42em] uppercase font-light"
+              style={{ fontFeatureSettings: '"ss01"' }}
+            >
+              Afterlight
+            </span>
+            <span
+              aria-hidden
+              className="hidden lg:inline-block h-[14px] w-px bg-ink/25"
+            />
+            <span className="text-ink text-[0.62rem] lg:text-[0.7rem] tracking-[0.32em] uppercase font-semibold">
+              Studios
+            </span>
+          </span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8 lg:gap-10">
