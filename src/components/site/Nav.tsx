@@ -38,20 +38,20 @@ export function Nav() {
       >
         <a
           href="#top"
-          className="group flex items-center shrink-0 h-full pl-5 lg:pl-7 pr-2 select-none"
+          className="group flex items-center shrink-0 h-full pl-3 lg:pl-5 select-none"
         >
-          <span className="flex items-baseline gap-[0.45em] leading-none">
+          <span className="flex items-baseline gap-[0.4em] leading-none">
             <span
-              className="font-display text-ink text-[1.15rem] lg:text-[1.45rem] tracking-[0.42em] uppercase font-light"
+              className="font-display text-ink text-[1.6rem] lg:text-[2rem] tracking-[0.38em] uppercase font-light"
               style={{ fontFeatureSettings: '"ss01"' }}
             >
               Afterlight
             </span>
             <span
               aria-hidden
-              className="hidden lg:inline-block h-[14px] w-px bg-ink/25"
+              className="hidden lg:inline-block h-[16px] lg:h-[20px] w-px bg-ink/25"
             />
-            <span className="text-ink text-[0.62rem] lg:text-[0.7rem] tracking-[0.32em] uppercase font-semibold">
+            <span className="text-ink text-[0.85rem] lg:text-[0.95rem] tracking-[0.3em] uppercase font-semibold">
               Studios
             </span>
           </span>
