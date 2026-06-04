@@ -24,7 +24,7 @@ export function About() {
 
           <div className="lg:col-span-7 lg:col-start-6 flex flex-col gap-8 self-end">
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Annexa Dynamics helps brands grow through powerful visual storytelling, strategic
+              AfterLight Studios helps brands grow through powerful visual storytelling, strategic
               social media, performance marketing, and lead-generation systems engineered for
               measurable results.
             </p>

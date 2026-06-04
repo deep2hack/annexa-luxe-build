@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 const reviews = [
   {
     quote:
-      "Annexa transformed how our developments are marketed. The films feel like cinema — and our conversion rate has never been higher.",
+      "AfterLight Studios transformed how our developments are marketed. The films feel like cinema — and our conversion rate has never been higher.",
     name: "Aarav Mehta",
     role: "MD, Lumen Estates",
     initials: "AM",
