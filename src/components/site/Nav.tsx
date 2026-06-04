@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { SITE } from "@/lib/site";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/afterlight-logo.png.asset.json";
 
 const links = [
   { href: "#work", label: "Work" },
@@ -36,12 +36,12 @@ export function Nav() {
           border: "1px solid rgba(255,255,255,0.6)",
         }}
       >
-        <a href="#top" className="flex items-center gap-2.5 lg:gap-3 group shrink-0">
-          <img src={logo} alt="AfterLight Studios" className="h-7 w-7 lg:h-8 lg:w-8 object-contain" />
-          <div className="flex items-baseline gap-1.5">
-            <span className="font-display text-[1.35rem] lg:text-[1.75rem] tracking-tight text-ink">AfterLight</span>
-            <span className="font-display italic text-[var(--gold)] text-sm lg:text-base">Studios</span>
-          </div>
+        <a href="#top" className="flex items-center group shrink-0 h-full py-1.5">
+          <img
+            src={logoAsset.url}
+            alt="AfterLight Studios"
+            className="h-full w-auto object-contain rounded-md transition-transform duration-500 group-hover:scale-[1.02]"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8 lg:gap-10">
