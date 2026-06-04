@@ -15,13 +15,13 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Annexa Dynamics — Editorial Creative & Growth Studio" },
+      { title: "AfterLight Studios — Editorial Creative & Growth Studio" },
       {
         name: "description",
         content:
-          "Annexa Dynamics is a luxury creative agency for real estate, fashion, hospitality and premium brands. Cinematic content, social strategy, Meta ads and lead generation.",
+          "AfterLight Studios is a luxury creative agency for real estate, fashion, hospitality and premium brands. Cinematic content, social strategy, Meta ads and lead generation.",
       },
-      { property: "og:title", content: "Annexa Dynamics — Editorial Creative & Growth Studio" },
+      { property: "og:title", content: "AfterLight Studios — Editorial Creative & Growth Studio" },
       {
         property: "og:description",
         content:

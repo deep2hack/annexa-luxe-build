@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16">
           <div className="col-span-2 md:col-span-2">
             <div className="flex items-baseline gap-2">
-              <span className="font-display text-3xl text-foreground">Annexa</span>
-              <span className="font-display italic text-2xl text-gold">Dynamics</span>
+              <span className="font-display text-3xl text-foreground">AfterLight</span>
+              <span className="font-display italic text-2xl text-gold">Studios</span>
             </div>
             <p className="mt-6 max-w-sm text-sm text-muted-foreground leading-relaxed">
               An editorial creative studio for real estate, fashion, hospitality and premium
@@ -61,7 +61,7 @@ export function Footer() {
         <div className="hairline my-14" />
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
-          <div>© {new Date().getFullYear()} Annexa Dynamics — All rights reserved.</div>
+          <div>© {new Date().getFullYear()} AfterLight Studios — All rights reserved.</div>
           <div>Crafted with intention.</div>
         </div>
       </div>
