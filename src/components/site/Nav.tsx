@@ -25,7 +25,7 @@ export function Nav() {
   return (
     <header className="fixed top-4 left-0 right-0 z-50 px-4 lg:px-6">
       <div
-        className={`mx-auto max-w-[1400px] h-14 lg:h-[60px] rounded-2xl flex items-center justify-between pl-5 pr-3 lg:pl-7 lg:pr-4 transition-all duration-500 ${
+        className={`mx-auto max-w-[1400px] h-14 lg:h-[60px] rounded-2xl flex items-center justify-between pr-3 lg:pr-4 transition-all duration-500 overflow-hidden ${
           scrolled
             ? "bg-white/85 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.35)]"
             : "bg-white/75 shadow-[0_8px_32px_-10px_rgba(0,0,0,0.25)]"
@@ -36,11 +36,25 @@ export function Nav() {
           border: "1px solid rgba(255,255,255,0.6)",
         }}
       >
-        <a href="#top" className="flex items-center group shrink-0 h-full py-1.5">
+        <a
+          href="#top"
+          className="relative flex items-center group shrink-0 h-full bg-black pl-4 lg:pl-6 pr-6 lg:pr-10"
+          style={{
+            clipPath: "polygon(0 0, 100% 0, calc(100% - 18px) 100%, 0 100%)",
+          }}
+        >
           <img
             src={logoAsset.url}
             alt="AfterLight Studios"
-            className="h-full w-auto object-contain rounded-md transition-transform duration-500 group-hover:scale-[1.02]"
+            className="h-[78%] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+          />
+          <span
+            aria-hidden
+            className="pointer-events-none absolute top-0 bottom-0 right-0 w-6"
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0) 100%)",
+            }}
           />
         </a>
 
@@ -66,7 +80,7 @@ export function Nav() {
         </a>
 
         <button
-          className="md:hidden text-ink"
+          className="md:hidden text-ink mr-1"
           aria-label="menu"
           onClick={() => setOpen((v) => !v)}
         >
