@@ -2,7 +2,7 @@ const items = [
   "Real Estate Films",
   "Fashion Editorials",
   "Brand Photography",
-  "Social Strategy",
+  "Social Strategy and Management",
   "Meta Ads",
   "Lead Generation",
   "Hospitality Content",

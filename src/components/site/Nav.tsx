@@ -52,7 +52,7 @@ export function Nav() {
               className="hidden lg:inline-block h-[16px] lg:h-[20px] w-px bg-ink/25"
             />
             <span className="text-ink text-[0.85rem] lg:text-[0.95rem] tracking-[0.3em] uppercase font-semibold">
-              Studios
+              House
             </span>
           </span>
         </a>

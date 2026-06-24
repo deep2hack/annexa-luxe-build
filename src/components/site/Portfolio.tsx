@@ -10,7 +10,7 @@ import hero1 from "@/assets/hero-realestate.jpg";
 import hero2 from "@/assets/hero-fashion.jpg";
 import hero3 from "@/assets/hero-photography.jpg";
 
-type Cat = "All" | "Real Estate" | "Fashion" | "Photography" | "Social" | "Ads";
+type Cat = "All" | "Real Estate" | "Photography" | "Social";
 
 type Item = {
   src: string;
@@ -23,17 +23,14 @@ type Item = {
 
 const items: Item[] = [
   { src: hero1, title: "Hillside Villa Film", client: "Lumen Estates", cat: "Real Estate", video: true, span: "tall" },
-  { src: hero2, title: "Atelier Maison SS25", client: "Maison Noir", cat: "Fashion", video: true },
   { src: p1, title: "Marble & Light", client: "Aurelia Hotels", cat: "Photography", span: "wide" },
-  { src: p2, title: "Champagne Edit", client: "Velvet & Co.", cat: "Fashion" },
   { src: p3, title: "Skyline Penthouse", client: "Northcrest Group", cat: "Real Estate", video: true, span: "tall" },
   { src: p4, title: "Tasting Menu Series", client: "Restaurant Solène", cat: "Photography" },
   { src: hero3, title: "Candlelit Hospitality", client: "Maison de Vins", cat: "Social", span: "wide" },
-  { src: p5, title: "Eau de Or Campaign", client: "Or Privé", cat: "Ads" },
   { src: p6, title: "Sunset Residences", client: "Pacific Modern", cat: "Real Estate" },
 ];
 
-const cats: Cat[] = ["All", "Real Estate", "Fashion", "Photography", "Social", "Ads"];
+const cats: Cat[] = ["All", "Real Estate", "Photography", "Social"];
 
 export function Portfolio() {
   const [active, setActive] = useState<Cat>("All");
