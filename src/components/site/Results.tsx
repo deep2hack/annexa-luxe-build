@@ -28,7 +28,7 @@ export function Results() {
               key={r.label}
               className="card-outline-white group p-10 lg:p-14 text-center transition-all duration-500 hover:-translate-y-1"
             >
-              <div className="font-display text-6xl lg:text-8xl text-foreground group-hover:text-gold transition-colors duration-500">
+              <div className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-foreground group-hover:text-gold transition-colors duration-500 leading-none break-words">
                 <Counter to={r.n} suffix={r.suffix} />
               </div>
               <div className="mt-4 text-[10px] tracking-[0.3em] uppercase text-gold">

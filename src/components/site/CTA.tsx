@@ -46,9 +46,6 @@ export function CTA() {
           </a>
         </div>
 
-        <div className="mt-16 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          or write to us — <a href={SITE.email} className="text-gold underline-grow">{SITE.emailPlain}</a>
-        </div>
       </div>
     </section>
   );
