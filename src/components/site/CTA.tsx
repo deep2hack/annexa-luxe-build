@@ -1,4 +1,4 @@
-import { MessageCircle, ArrowUpRight } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
 
 export function CTA() {
@@ -36,13 +36,6 @@ export function CTA() {
           >
             <MessageCircle size={16} />
             Message Us On WhatsApp
-          </a>
-          <a
-            href="#work"
-            className="group inline-flex items-center gap-3 border border-foreground/30 text-foreground hover:border-gold hover:text-gold px-8 py-5 text-xs uppercase tracking-[0.3em] transition-all duration-500"
-          >
-            View Portfolio
-            <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </div>
 
