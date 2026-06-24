@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Linkedin, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
 
 export function Footer() {
@@ -21,7 +21,6 @@ export function Footer() {
                 { Icon: MessageCircle, href: SITE.whatsapp, label: "WhatsApp" },
                 { Icon: Instagram, href: SITE.instagram, label: "Instagram" },
                 { Icon: Linkedin, href: SITE.linkedin, label: "LinkedIn" },
-                { Icon: Mail, href: SITE.email, label: "Email" },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}
@@ -40,7 +39,6 @@ export function Footer() {
           <div>
             <div className="text-[10px] uppercase tracking-[0.3em] text-gold mb-5">Explore</div>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><a href="#work" className="hover:text-foreground underline-grow">Portfolio</a></li>
               <li><a href="#services" className="hover:text-foreground underline-grow">Services</a></li>
               <li><a href="#process" className="hover:text-foreground underline-grow">Process</a></li>
               <li><a href="#about" className="hover:text-foreground underline-grow">Studio</a></li>
@@ -53,7 +51,6 @@ export function Footer() {
               <li><a href={SITE.whatsapp} target="_blank" rel="noreferrer" className="hover:text-foreground underline-grow">WhatsApp</a></li>
               <li><a href={SITE.instagram} target="_blank" rel="noreferrer" className="hover:text-foreground underline-grow">Instagram</a></li>
               <li><a href={SITE.linkedin} target="_blank" rel="noreferrer" className="hover:text-foreground underline-grow">LinkedIn</a></li>
-              <li><a href={SITE.email} className="hover:text-foreground underline-grow">{SITE.emailPlain}</a></li>
             </ul>
           </div>
         </div>
