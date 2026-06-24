@@ -4,7 +4,7 @@ const stats = [
   { n: 240, suffix: "+", label: "Projects Completed" },
   { n: 580, suffix: "+", label: "Videos Produced" },
   { n: 12000, suffix: "+", label: "Leads Generated" },
-  { n: 90, suffix: "+", label: "Clients Served" },
+  { n: 50, suffix: "+", label: "Clients Served" },
 ];
 
 export function About() {
