@@ -7,6 +7,8 @@ import p6 from "@/assets/portfolio-6.jpg";
 import video1 from "@/assets/portfolioVideo1.mp4.asset.json";
 import video2 from "@/assets/portfolioVideo2.mp4.asset.json";
 import video3 from "@/assets/portfolioVideo3.mp4.asset.json";
+import video4 from "@/assets/portfolioVideo4.mp4.asset.json";
+import gummies from "@/assets/portfolio-gummies.png.asset.json";
 
 type Cat = "All" | "Real Estate" | "Photography" | "Social";
 
@@ -24,6 +26,8 @@ const items: Item[] = [
   { src: p1, title: "Marble & Light", client: "Aurelia Hotels", cat: "Photography", span: "wide" },
   { src: p3, title: "Skyline Penthouse", client: "Northcrest Group", cat: "Real Estate", span: "tall" },
   { src: p4, title: "Tasting Menu Series", client: "Restaurant Solène", cat: "Photography" },
+  { src: gummies.url, title: "Peach Mango Campaign", client: "—", cat: "Photography", span: "tall" },
+  { src: video4.url, title: "Signature Film IV", client: "—", cat: "Social", video: true, span: "wide" },
   { src: video2.url, title: "Signature Film II", client: "—", cat: "Social", video: true, span: "wide" },
   { src: video3.url, title: "Signature Film III", client: "—", cat: "Real Estate", video: true },
 ];
