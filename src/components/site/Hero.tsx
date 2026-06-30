@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
 import hero1 from "@/assets/hero-realestate.jpg";
-import hero2 from "@/assets/hero-fashion.jpg";
+import hero2 from "@/assets/hero-consumer.jpg";
 import hero3 from "@/assets/hero-photography.jpg";
 import hero4 from "@/assets/hero-marketing.jpg";
 
@@ -15,9 +15,9 @@ const slides = [
   },
   {
     img: hero2,
-    eyebrow: "Fashion",
-    title: ["Luxury Fashion", "Storytelling."],
-    desc: "Editorial campaigns crafted for the modern atelier.",
+    eyebrow: "Consumer Brands",
+    title: ["Building Brands That", "People Remember."],
+    desc: "Creative campaigns that drive growth and build lasting brands.",
   },
   {
     img: hero3,
