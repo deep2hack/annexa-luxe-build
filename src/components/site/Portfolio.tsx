@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, X } from "lucide-react";
+import { X } from "lucide-react";
 import p1 from "@/assets/portfolio-1.jpg";
 import p3 from "@/assets/portfolio-3.jpg";
 import p4 from "@/assets/portfolio-4.jpg";
