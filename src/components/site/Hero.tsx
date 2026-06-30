@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
-import hero1 from "@/assets/hero-realestate.jpg";
+import hero1 from "@/assets/portfolio-1.jpg";
 import hero2 from "@/assets/hero-consumer.jpg";
 import hero3 from "@/assets/hero-photography.jpg";
 import hero4 from "@/assets/hero-marketing.jpg";
