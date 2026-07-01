@@ -60,7 +60,6 @@ export function Portfolio() {
         <div className="absolute top-[35%] right-[18%] h-1.5 w-1.5 rounded-full bg-gold/40 animate-float-slow" />
         <div className="absolute bottom-[18%] right-[40%] h-1 w-1 rounded-full bg-white/40 animate-float-slower" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
       </div>
 
       <div className="mx-auto max-w-[1500px] px-6 lg:px-10 relative">
