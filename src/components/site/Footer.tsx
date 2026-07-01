@@ -49,13 +49,12 @@ export function Footer() {
             <div className="text-[10px] uppercase tracking-[0.3em] text-gold mb-5">Contact</div>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li><a href={SITE.whatsapp} target="_blank" rel="noreferrer" className="hover:text-foreground underline-grow">WhatsApp</a></li>
-              <li><a href={SITE.instagram} target="_blank" rel="noreferrer" className="hover:text-foreground underline-grow">Instagram</a></li>
               <li><a href={SITE.linkedin} target="_blank" rel="noreferrer" className="hover:text-foreground underline-grow">LinkedIn</a></li>
             </ul>
           </div>
         </div>
 
-        <div className="hairline my-14" />
+        <div className="my-14" />
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
           <div>© {new Date().getFullYear()} AfterLight Studios — All rights reserved.</div>

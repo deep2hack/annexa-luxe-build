@@ -12,11 +12,7 @@ export function CTA() {
         }}
       />
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 relative text-center">
-        <div className="eyebrow mb-8 inline-flex items-center">
-          <span className="inline-block w-8 h-px bg-gold align-middle mr-3" />
-          Let's Begin
-          <span className="inline-block w-8 h-px bg-gold align-middle ml-3" />
-        </div>
+        <div className="eyebrow mb-8">Let's Begin</div>
         <h2 className="font-display text-6xl md:text-8xl lg:text-[10rem] leading-[0.9] tracking-tight text-balance">
           Ready to grow
           <br />
@@ -38,6 +34,10 @@ export function CTA() {
             Message Us On WhatsApp
           </a>
         </div>
+
+        <p className="mt-6 text-center text-[11px] uppercase tracking-[0.3em] text-champagne/75">
+          +91 75207 84796
+        </p>
 
       </div>
     </section>
