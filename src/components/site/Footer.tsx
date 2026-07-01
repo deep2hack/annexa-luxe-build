@@ -54,7 +54,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="hairline my-14" />
+        <div className="my-14" />
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
           <div>© {new Date().getFullYear()} AfterLight Studios — All rights reserved.</div>

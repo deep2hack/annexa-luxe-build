@@ -35,6 +35,10 @@ export function CTA() {
           </a>
         </div>
 
+        <p className="mt-6 text-center text-[11px] uppercase tracking-[0.3em] text-champagne/75">
+          +91 75207 84796
+        </p>
+
       </div>
     </section>
   );
