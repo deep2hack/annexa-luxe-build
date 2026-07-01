@@ -40,7 +40,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="relative py-32 lg:py-44 bg-card">
+    <section id="services" className="relative py-20 lg:py-28 bg-card">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-20">
           <div className="max-w-2xl">

@@ -4,23 +4,20 @@ import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 const reviews = [
   {
     quote:
-      "AfterLight Studios transformed how our developments are marketed. The films feel like cinema — and our conversion rate has never been higher.",
+      "AfterLight House transformed how our developments are presented. The films feel like cinema — the attention to detail and creative execution exceeded our expectations.",
     name: "Aarav Mehta",
-    role: "MD, Lumen Estates",
     initials: "AM",
   },
   {
     quote:
-      "Editorial, elegant, and effective. They understand luxury in a way most agencies simply don't.",
+      "Editorial, elegant, and effective. They understand luxury in a way most agencies simply don't. Every deliverable reflected a premium level of craftsmanship.",
     name: "Sofia Marchetti",
-    role: "Creative Director, Maison Noir",
     initials: "SM",
   },
   {
     quote:
-      "From content to ads to leads — one studio, all dialled in. Bookings doubled within a quarter.",
+      "From content to ads to leads — one studio, all dialled in. The collaboration elevated our brand in every way.",
     name: "Rohan Kapoor",
-    role: "Owner, Restaurant Solène",
     initials: "RK",
   },
 ];
@@ -31,7 +28,7 @@ export function Testimonials() {
   const go = (d: number) => setI((p) => (p + d + reviews.length) % reviews.length);
 
   return (
-    <section className="spotlight-white relative py-32 lg:py-44 bg-background overflow-hidden">
+    <section className="spotlight-white relative py-20 lg:py-28 bg-background overflow-hidden">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 relative">
         <div className="eyebrow mb-10">
           <span className="inline-block w-8 h-px bg-gold align-middle mr-3" />
@@ -54,9 +51,6 @@ export function Testimonials() {
               </div>
               <div>
                 <div className="font-display text-xl">{r.name}</div>
-                <div className="text-xs uppercase tracking-[0.2em] ivory-muted mt-1">
-                  {r.role}
-                </div>
               </div>
             </div>
 

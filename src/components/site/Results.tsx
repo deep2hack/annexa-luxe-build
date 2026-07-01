@@ -9,7 +9,7 @@ const results = [
 
 export function Results() {
   return (
-    <section className="spotlight-white relative py-32 lg:py-44 overflow-hidden bg-background">
+    <section className="spotlight-white relative py-20 lg:py-28 overflow-hidden bg-background">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 relative">
         <div className="text-center max-w-2xl mx-auto">
           <div className="eyebrow mb-6 inline-flex items-center justify-center">
