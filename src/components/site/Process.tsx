@@ -8,7 +8,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="relative py-32 lg:py-44 bg-background">
+    <section id="process" className="relative py-20 lg:py-28 bg-background">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="max-w-2xl mb-20">
           <div className="eyebrow mb-6">

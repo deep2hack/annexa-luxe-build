@@ -31,7 +31,7 @@ export function Testimonials() {
   const go = (d: number) => setI((p) => (p + d + reviews.length) % reviews.length);
 
   return (
-    <section className="spotlight-white relative py-32 lg:py-44 bg-background overflow-hidden">
+    <section className="spotlight-white relative py-20 lg:py-28 bg-background overflow-hidden">
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10 relative">
         <div className="eyebrow mb-10">
           <span className="inline-block w-8 h-px bg-gold align-middle mr-3" />

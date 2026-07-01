@@ -3,7 +3,7 @@ import { SITE } from "@/lib/site";
 
 export function CTA() {
   return (
-    <section id="contact" className="relative py-32 lg:py-48 bg-background overflow-hidden">
+    <section id="contact" className="relative py-20 lg:py-28 bg-background overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.07] pointer-events-none"
         style={{

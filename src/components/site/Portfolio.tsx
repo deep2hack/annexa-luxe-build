@@ -40,7 +40,7 @@ export function Portfolio() {
   const filtered = active === "All" ? items : items.filter((i) => i.cat === active);
 
   return (
-    <section id="work" className="relative py-32 lg:py-44 bg-background overflow-hidden">
+    <section id="work" className="relative py-20 lg:py-28 bg-background overflow-hidden">
       {/* Ambient premium backdrop */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="absolute -top-32 -left-32 h-[480px] w-[480px] rounded-full blur-3xl opacity-[0.10]"
