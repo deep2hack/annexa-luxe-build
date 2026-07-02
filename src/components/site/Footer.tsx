@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, MessageCircle } from "lucide-react";
+import { Linkedin, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
 
 export function Footer() {
@@ -19,7 +19,6 @@ export function Footer() {
             <div className="mt-8 flex items-center gap-3">
               {[
                 { Icon: MessageCircle, href: SITE.whatsapp, label: "WhatsApp" },
-                { Icon: Instagram, href: SITE.instagram, label: "Instagram" },
                 { Icon: Linkedin, href: SITE.linkedin, label: "LinkedIn" },
               ].map(({ Icon, href, label }) => (
                 <a
