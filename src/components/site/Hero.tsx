@@ -40,6 +40,7 @@ const slides = [
 
 export function Hero() {
   const [i, setI] = useState(0);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const t = setInterval(() => setI((p) => (p + 1) % slides.length), 4500);
@@ -47,7 +48,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="top" className="relative h-screen min-h-[720px] w-full overflow-hidden">
+    <section id="top" className="relative h-screen min-h-[560px] sm:min-h-[720px] w-full overflow-hidden">
       {/* Slideshow */}
       {slides.map((s, idx) => (
         <div
@@ -60,8 +61,8 @@ export function Hero() {
           <img
             src={s.img}
             alt=""
-            className={`h-full w-full object-cover object-center md:object-center ${idx === i ? "animate-ken-burns" : ""}`}
-            style={{ objectPosition: "var(--hero-pos, 50% 40%)" }}
+            className={`h-full w-full object-cover ${idx === i ? "animate-ken-burns" : ""}`}
+            style={{ objectPosition: isMobile ? s.mobilePos : "50% 50%" }}
             loading={idx === 0 ? "eager" : "lazy"}
             width={1920}
             height={1280}
