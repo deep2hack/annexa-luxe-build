@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { useIsMobile } from "@/hooks/use-mobile";
 import hero1 from "@/assets/portfolio-1.jpg";
 import hero2 from "@/assets/hero-consumer.jpg";
 import hero3 from "@/assets/hero-photography.jpg";
@@ -12,24 +13,28 @@ const slides = [
     eyebrow: "Real Estate",
     title: ["Cinematic", "Real Estate Content."],
     desc: "Architectural films that turn listings into desire.",
+    mobilePos: "60% 45%",
   },
   {
     img: hero2,
     eyebrow: "Consumer Brands",
     title: ["Building Brands That", "People Remember."],
     desc: "Creative campaigns that drive growth and build lasting brands.",
+    mobilePos: "55% 40%",
   },
   {
     img: hero3,
     eyebrow: "Photography",
     title: ["Visuals", "That Sell."],
     desc: "Photography for hospitality, interiors and lifestyle brands.",
+    mobilePos: "50% 35%",
   },
   {
     img: hero4,
     eyebrow: "Marketing",
     title: ["Content That", "Generates Leads."],
     desc: "Meta ads, funnels and growth systems engineered for ROI.",
+    mobilePos: "50% 40%",
   },
 ];
 
