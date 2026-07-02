@@ -55,7 +55,8 @@ export function Hero() {
           <img
             src={s.img}
             alt=""
-            className={`h-full w-full object-cover ${idx === i ? "animate-ken-burns" : ""}`}
+            className={`h-full w-full object-cover object-center md:object-center ${idx === i ? "animate-ken-burns" : ""}`}
+            style={{ objectPosition: "var(--hero-pos, 50% 40%)" }}
             loading={idx === 0 ? "eager" : "lazy"}
             width={1920}
             height={1280}
