@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { useIsMobile } from "@/hooks/use-mobile";
 import hero1 from "@/assets/portfolio-1.jpg";
 import hero2 from "@/assets/hero-consumer.jpg";
 import hero3 from "@/assets/hero-photography.jpg";
@@ -12,29 +13,34 @@ const slides = [
     eyebrow: "Real Estate",
     title: ["Cinematic", "Real Estate Content."],
     desc: "Architectural films that turn listings into desire.",
+    mobilePos: "60% 45%",
   },
   {
     img: hero2,
     eyebrow: "Consumer Brands",
     title: ["Building Brands That", "People Remember."],
     desc: "Creative campaigns that drive growth and build lasting brands.",
+    mobilePos: "55% 40%",
   },
   {
     img: hero3,
     eyebrow: "Photography",
     title: ["Visuals", "That Sell."],
     desc: "Photography for hospitality, interiors and lifestyle brands.",
+    mobilePos: "50% 35%",
   },
   {
     img: hero4,
     eyebrow: "Marketing",
     title: ["Content That", "Generates Leads."],
     desc: "Meta ads, funnels and growth systems engineered for ROI.",
+    mobilePos: "50% 40%",
   },
 ];
 
 export function Hero() {
   const [i, setI] = useState(0);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const t = setInterval(() => setI((p) => (p + 1) % slides.length), 4500);
@@ -42,7 +48,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="top" className="relative h-screen min-h-[720px] w-full overflow-hidden">
+    <section id="top" className="relative h-screen min-h-[560px] sm:min-h-[720px] w-full overflow-hidden">
       {/* Slideshow */}
       {slides.map((s, idx) => (
         <div
@@ -56,6 +62,7 @@ export function Hero() {
             src={s.img}
             alt=""
             className={`h-full w-full object-cover ${idx === i ? "animate-ken-burns" : ""}`}
+            style={{ objectPosition: isMobile ? s.mobilePos : "50% 50%" }}
             loading={idx === 0 ? "eager" : "lazy"}
             width={1920}
             height={1280}
