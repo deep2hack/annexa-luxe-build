@@ -2,35 +2,35 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { useIsMobile } from "@/hooks/use-mobile";
-import hero1 from "@/assets/portfolio-1.jpg";
-import hero2 from "@/assets/hero-consumer.jpg";
-import hero3 from "@/assets/hero-photography.jpg";
-import hero4 from "@/assets/hero-marketing.jpg";
+import hero1 from "@/assets/portfolio-1.jpg.asset.json";
+import hero2 from "@/assets/hero-consumer.jpg.asset.json";
+import hero3 from "@/assets/hero-photography.jpg.asset.json";
+import hero4 from "@/assets/hero-marketing.jpg.asset.json";
 
 const slides = [
   {
-    img: hero1,
+    img: hero1.url,
     eyebrow: "Real Estate",
     title: ["Cinematic", "Real Estate Content."],
     desc: "Architectural films that turn listings into desire.",
     mobilePos: "60% 45%",
   },
   {
-    img: hero2,
+    img: hero2.url,
     eyebrow: "Consumer Brands",
     title: ["Building Brands That", "People Remember."],
     desc: "Creative campaigns that drive growth and build lasting brands.",
     mobilePos: "55% 40%",
   },
   {
-    img: hero3,
+    img: hero3.url,
     eyebrow: "Photography",
     title: ["Visuals", "That Sell."],
     desc: "Photography for hospitality, interiors and lifestyle brands.",
     mobilePos: "50% 35%",
   },
   {
-    img: hero4,
+    img: hero4.url,
     eyebrow: "Marketing",
     title: ["Content That", "Generates Leads."],
     desc: "Meta ads, funnels and growth systems engineered for ROI.",

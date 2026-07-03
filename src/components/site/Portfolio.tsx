@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-import p1 from "@/assets/portfolio-1.jpg";
-import p3 from "@/assets/portfolio-3.jpg";
-import p4 from "@/assets/portfolio-4.jpg";
-import p6 from "@/assets/portfolio-6.jpg";
+import p1 from "@/assets/portfolio-1.jpg.asset.json";
+import p3 from "@/assets/portfolio-3.jpg.asset.json";
+import p4 from "@/assets/portfolio-4.jpg.asset.json";
+import p6 from "@/assets/portfolio-6.jpg.asset.json";
 import video1 from "@/assets/portfolioVideo1.mp4.asset.json";
 import video2 from "@/assets/portfolioVideo2.mp4.asset.json";
 import video3 from "@/assets/portfolioVideo3.mp4.asset.json";
@@ -23,9 +23,9 @@ type Item = {
 
 const items: Item[] = [
   { src: video1.url, title: "Signature Film I", client: "—", cat: "Real Estate", video: true, span: "tall" },
-  { src: p1, title: "Marble & Light", client: "Aurelia Hotels", cat: "Photography", span: "wide" },
-  { src: p3, title: "Skyline Penthouse", client: "Northcrest Group", cat: "Real Estate", span: "tall" },
-  { src: p4, title: "Tasting Menu Series", client: "Restaurant Solène", cat: "Photography" },
+  { src: p1.url, title: "Marble & Light", client: "Aurelia Hotels", cat: "Photography", span: "wide" },
+  { src: p3.url, title: "Skyline Penthouse", client: "Northcrest Group", cat: "Real Estate", span: "tall" },
+  { src: p4.url, title: "Tasting Menu Series", client: "Restaurant Solène", cat: "Photography" },
   { src: gummies.url, title: "Peach Mango Campaign", client: "—", cat: "Photography", span: "tall" },
   { src: video4.url, title: "Signature Film IV", client: "—", cat: "Social", video: true, span: "wide" },
   { src: video2.url, title: "Signature Film II", client: "—", cat: "Social", video: true, span: "wide" },
