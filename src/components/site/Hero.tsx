@@ -20,7 +20,7 @@ const slides = [
     eyebrow: "Consumer Brands",
     title: ["Building Brands That", "People Remember."],
     desc: "Creative campaigns that drive growth and build lasting brands.",
-    mobilePos: "55% 40%",
+    mobilePos: "50% 50%",
   },
   {
     img: hero3.url,

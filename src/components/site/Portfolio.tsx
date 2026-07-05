@@ -91,13 +91,13 @@ export function Portfolio() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 auto-rows-[200px] lg:auto-rows-[260px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 auto-rows-[260px] sm:auto-rows-[220px] lg:auto-rows-[260px]">
           {filtered.map((it, i) => (
             <button
               key={`${it.title}-${i}`}
               onClick={() => setLightbox(it)}
               className={`group relative overflow-hidden bg-card text-left animate-fade-in ${
-                it.span === "tall" ? "row-span-2" : it.span === "wide" ? "col-span-2" : ""
+                it.span === "tall" ? "lg:row-span-2" : it.span === "wide" ? "sm:col-span-2" : ""
               }`}
               style={{ animationDelay: `${i * 80}ms`, animationFillMode: "both" }}
             >
