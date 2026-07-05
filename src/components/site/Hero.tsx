@@ -40,7 +40,6 @@ const slides = [
 
 export function Hero() {
   const [i, setI] = useState(0);
-  const isMobile = useIsMobile();
 
   useEffect(() => {
     const t = setInterval(() => setI((p) => (p + 1) % slides.length), 4500);
@@ -61,8 +60,7 @@ export function Hero() {
           <img
             src={s.img}
             alt=""
-            className={`h-full w-full ${isMobile ? "object-contain bg-background" : "object-cover"} ${idx === i ? "animate-ken-burns" : ""}`}
-            style={{ objectPosition: isMobile ? "50% 50%" : "50% 50%" }}
+            className={`h-full w-full object-cover ${idx === i ? "animate-ken-burns" : ""}`}
             loading={idx === 0 ? "eager" : "lazy"}
             width={1920}
             height={1280}
