@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
-import { useIsMobile } from "@/hooks/use-mobile";
+
 import hero1 from "@/assets/portfolio-1.jpg.asset.json";
 import hero2 from "@/assets/hero-consumer.jpg.asset.json";
 import hero3 from "@/assets/hero-photography.jpg.asset.json";
