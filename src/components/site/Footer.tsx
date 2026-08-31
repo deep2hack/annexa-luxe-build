@@ -59,6 +59,18 @@ export function Footer() {
           <div>© {new Date().getFullYear()} AfterLight Studios — All rights reserved.</div>
           <div>Crafted with intention.</div>
         </div>
+
+        <div className="mt-6 text-center text-[12px] tracking-[0.18em] text-muted-foreground/80">
+          Website designed & developed by{" "}
+          <a
+            href="https://www.linkedin.com/in/deepak-singh-395b97383?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block text-champagne underline-grow transition-colors hover:text-gold"
+          >
+            Deepak Kumar
+          </a>
+        </div>
       </div>
     </footer>
   );
