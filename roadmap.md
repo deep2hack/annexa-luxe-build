@@ -1,0 +1,3 @@
+- [ ] Reposition homepage copy, hero and moving service strip for influencer marketing/social media.
+- [ ] Update studio highlights, services, portfolio removal, outcomes, process, testimonial replacement, CTA and footer.
+- [ ] Verify homepage at desktop and mobile sizes, links, media and current build status.
