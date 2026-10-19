@@ -1,7 +1,7 @@
 import { Counter } from "./Counter";
 
 const results = [
-  { n: 500, suffix: "K+", label: "Content Views" },
+  { n: 300, suffix: "+", label: "Creator Network" },
   { n: 1200, suffix: "+", label: "Qualified Leads" },
   { n: 45, suffix: "+", label: "Brands Managed" },
   { n: 8, suffix: "x", label: "Average ROAS" },

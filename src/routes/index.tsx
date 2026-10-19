@@ -4,7 +4,6 @@ import { Hero } from "@/components/site/Hero";
 import { Marquee } from "@/components/site/Marquee";
 import { About } from "@/components/site/About";
 import { Services } from "@/components/site/Services";
-import { Portfolio } from "@/components/site/Portfolio";
 import { Results } from "@/components/site/Results";
 import { Process } from "@/components/site/Process";
 import { Testimonials } from "@/components/site/Testimonials";
@@ -15,19 +14,22 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AfterLight Studios — Editorial Creative & Growth Studio" },
+      { title: "AfterLight Studios — Influencer Marketing & Social Media" },
       {
         name: "description",
         content:
-          "AfterLight Studios is a luxury creative agency for real estate, fashion, hospitality and premium brands. Cinematic content, social strategy, Meta ads and lead generation.",
+          "AfterLight Studios builds social-first content strategies, influencer partnerships, and thoughtful social media management for ambitious brands.",
       },
-      { property: "og:title", content: "AfterLight Studios — Editorial Creative & Growth Studio" },
+      { property: "og:title", content: "AfterLight Studios — Influencer Marketing & Social Media" },
       {
         property: "og:description",
         content:
-          "Cinematic content, social, Meta ads and lead generation for real estate, fashion, hospitality and premium brands.",
+          "Influencer partnerships, social media management, and social-first content for ambitious brands.",
       },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "AfterLight Studios — Influencer Marketing & Social Media" },
+      { name: "twitter:description", content: "Influencer partnerships, social media management, and social-first content for ambitious brands." },
     ],
   }),
   component: Home,
@@ -41,7 +43,6 @@ function Home() {
       <Marquee />
       <About />
       <Services />
-      <Portfolio />
       <Results />
       <Process />
       <Testimonials />

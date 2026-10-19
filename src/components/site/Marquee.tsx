@@ -1,10 +1,9 @@
 const items = [
-  "Real Estate Films",
+  "Influencer Marketing",
+  "Social Strategies & Management",
   "Fashion Editorials",
   "Brand Photography",
-  "Social Strategy and Management",
   "Meta Ads",
-  "Lead Generation",
   "Hospitality Content",
 ];
 

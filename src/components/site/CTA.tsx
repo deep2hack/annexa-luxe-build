@@ -14,13 +14,12 @@ export function CTA() {
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10 relative text-center">
         <div className="eyebrow mb-8">Let's Begin</div>
         <h2 className="font-display text-6xl md:text-8xl lg:text-[10rem] leading-[0.9] tracking-tight text-balance">
-          Ready to grow
+          Ready to make
           <br />
-          <span className="italic text-champagne">your brand?</span>
+          <span className="italic text-champagne">your brand stand out?</span>
         </h2>
         <p className="mt-10 max-w-2xl mx-auto text-lg text-muted-foreground">
-          Whether you're a real estate developer, fashion house, restaurant or growing brand —
-          we create content that attracts attention and generates results.
+          Whether you're launching a product, building your social presence, or planning your next creator campaign, let's create something worth paying attention to.
         </p>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
@@ -31,7 +30,7 @@ export function CTA() {
             className="group inline-flex items-center gap-3 bg-white text-black px-8 py-5 text-xs uppercase tracking-[0.3em] hover:bg-champagne hover:text-ink transition-all duration-500"
           >
             <MessageCircle size={16} />
-            Message Us On WhatsApp
+            Start a Conversation
           </a>
         </div>
 

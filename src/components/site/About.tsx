@@ -1,11 +1,6 @@
 import { Counter } from "./Counter";
-
-const stats = [
-  { n: 240, suffix: "+", label: "Projects Completed" },
-  { n: 580, suffix: "+", label: "Videos Produced" },
-  { n: 12000, suffix: "+", label: "Leads Generated" },
-  { n: 50, suffix: "+", label: "Clients Served" },
-];
+import fashionCreator from "@/assets/campaign-fashion-creator.jpg";
+import beautyCreator from "@/assets/campaign-beauty-creator.jpg";
 
 export function About() {
   return (
@@ -24,35 +19,28 @@ export function About() {
 
           <div className="lg:col-span-7 lg:col-start-6 flex flex-col gap-8 self-end">
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              AfterLight Studios helps brands grow through powerful visual storytelling, strategic
-              social media, performance marketing, and lead-generation systems engineered for
-              measurable results.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              We pair editorial craft with data-driven marketing — so the worlds we build for our
-              clients don't just look exceptional, they perform.
+              Attention is earned, not demanded. We help brands build a powerful social presence through strategic content, consistent social media management, and influencer partnerships that bring products and stories to the right audiences. From planning and production to creator collaborations and campaign execution, we turn creative ideas into meaningful brand experiences.
             </p>
           </div>
         </div>
 
         <div className="mt-24 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
-          {stats.map((s, idx) => (
-            <div
-              key={s.label}
-              className={`group p-8 lg:p-10 text-center transition-all duration-500 hover:-translate-y-1 ${
-                idx % 2 === 0 ? "card-ivory" : "card-outline-white"
-              }`}
-            >
-              <div className={`font-display text-5xl lg:text-7xl ${idx % 2 === 0 ? "" : "text-foreground group-hover:text-gold transition-colors duration-500"}`}>
-                <Counter to={s.n} suffix={s.suffix} />
-              </div>
-              <div className={`mt-4 text-[10px] tracking-[0.3em] uppercase ${idx % 2 === 0 ? "ivory-gold" : "text-gold"}`}>
-                {s.label}
-              </div>
+        <div className="mt-16 grid gap-10 lg:grid-cols-2 lg:gap-12">
+          <article className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-5 items-center">
+            <img src={fashionCreator} alt="Fashion creator filming a campaign in a studio" loading="lazy" width={1408} height={1008} className="aspect-[4/5] h-full w-full object-cover" />
+            <div>
+              <h3 className="font-display text-3xl lg:text-4xl text-foreground">Social Media Management</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">Your social presence, thoughtfully managed. We plan content calendars, create scroll-stopping visuals, manage publishing, and build a consistent brand voice across your social platforms.</p>
             </div>
-          ))}
+          </article>
+          <article className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-5 items-center">
+            <img src={beautyCreator} alt="Beauty creator featuring an unbranded skincare product" loading="lazy" width={1408} height={1008} className="aspect-[4/5] h-full w-full object-cover" />
+            <div>
+              <h3 className="font-display text-3xl lg:text-4xl text-foreground">Influencer Marketing</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">The right creators. The right audience. The right story. We identify relevant influencers, coordinate paid collaborations, and manage creator-led campaigns that introduce your brand to new audiences.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>

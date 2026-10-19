@@ -1,9 +1,9 @@
 const steps = [
-  { n: "01", title: "Discovery", desc: "We listen, audit and uncover what makes your brand worth following." },
-  { n: "02", title: "Strategy", desc: "A clear roadmap for content, channels and growth — designed for ROI." },
-  { n: "03", title: "Production", desc: "Editorial-grade videography, photography and creative direction." },
-  { n: "04", title: "Marketing", desc: "Distribution, paid media and community to put the work in front of buyers." },
-  { n: "05", title: "Growth", desc: "Leads, sales and scale — measured, optimised and compounding." },
+  { n: "01", title: "Discovery", desc: "We understand your brand, audience, goals, and creative direction." },
+  { n: "02", title: "Strategy", desc: "We build a tailored social media plan or influencer campaign strategy, including content concepts, platforms, creator selection, and deliverables." },
+  { n: "03", title: "Creation & Collaboration", desc: "We develop content, coordinate with creators, manage approvals, and bring campaign ideas to life." },
+  { n: "04", title: "Publishing & Execution", desc: "We coordinate content publishing, influencer integrations, and campaign rollouts across relevant platforms." },
+  { n: "05", title: "Analysis & Optimisation", desc: "We review performance, analyse relevant metrics, and identify opportunities to improve future campaigns." },
 ];
 
 export function Process() {
@@ -16,7 +16,7 @@ export function Process() {
             The Process
           </div>
           <h2 className="font-display text-5xl lg:text-7xl leading-[0.95] tracking-tight text-balance">
-            Five steps to a <span className="italic text-champagne">flagship</span> brand.
+            Five steps to a <span className="italic text-champagne">stronger social presence.</span>
           </h2>
         </div>
 
