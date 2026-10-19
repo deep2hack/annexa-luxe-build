@@ -12,8 +12,7 @@ export function Footer() {
               <span className="font-display italic text-2xl text-gold">Studios</span>
             </div>
             <p className="mt-6 max-w-sm text-sm text-muted-foreground leading-relaxed">
-              An editorial creative studio for real estate, fashion, hospitality and premium
-              brands ready to look — and perform — at the highest level.
+              AfterLight Studios is a creative marketing studio specialising in influencer partnerships, social media management, and social-first content for ambitious brands.
             </p>
 
             <div className="mt-8 flex items-center gap-3">

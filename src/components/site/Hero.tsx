@@ -1,40 +1,39 @@
 import { useEffect, useState } from "react";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
-
-import hero1 from "@/assets/portfolio-1.jpg.asset.json";
-import hero2 from "@/assets/hero-consumer.jpg.asset.json";
-import hero3 from "@/assets/hero-photography.jpg.asset.json";
-import hero4 from "@/assets/hero-marketing.jpg.asset.json";
+import creatorCampaign from "@/assets/campaign-hero-creator.jpg";
+import fashionCampaign from "@/assets/campaign-fashion-creator.jpg";
+import beautyCampaign from "@/assets/campaign-beauty-creator.jpg";
+import hospitalityCampaign from "@/assets/campaign-hospitality-creator.jpg";
 
 const slides = [
   {
-    img: hero1.url,
-    eyebrow: "Real Estate",
-    title: ["Cinematic", "Real Estate Content."],
-    desc: "Architectural films that turn listings into desire.",
-    mobilePos: "60% 45%",
+    img: creatorCampaign,
+    eyebrow: "Influencer Marketing & Social Media",
+    title: ["Making brands", "impossible to ignore."],
+    desc: "We connect brands with the right creators and build social-first content strategies that capture attention, strengthen communities, and make brands stand out.",
+    mobilePos: "56% 48%",
   },
   {
-    img: hero2.url,
-    eyebrow: "Consumer Brands",
-    title: ["Building Brands That", "People Remember."],
-    desc: "Creative campaigns that drive growth and build lasting brands.",
-    mobilePos: "50% 50%",
+    img: fashionCampaign,
+    eyebrow: "Creator Partnerships",
+    title: ["The right creators.", "A story worth sharing."],
+    desc: "Thoughtful collaborations bring your brand into the conversations your audience cares about.",
+    mobilePos: "52% 48%",
   },
   {
-    img: hero3.url,
-    eyebrow: "Photography",
-    title: ["Visuals", "That Sell."],
-    desc: "Photography for hospitality, interiors and lifestyle brands.",
-    mobilePos: "50% 35%",
+    img: beautyCampaign,
+    eyebrow: "Social Media Management",
+    title: ["A presence", "people remember."],
+    desc: "Consistent social strategy and considered content make every touchpoint feel unmistakably yours.",
+    mobilePos: "56% 48%",
   },
   {
-    img: hero4.url,
-    eyebrow: "Marketing",
-    title: ["Content That", "Generates Leads."],
-    desc: "Meta ads, funnels and growth systems engineered for ROI.",
-    mobilePos: "50% 40%",
+    img: hospitalityCampaign,
+    eyebrow: "Social-first Campaigns",
+    title: ["Creative that", "starts a conversation."],
+    desc: "From first idea to final post, we help ambitious brands show up with clarity and character.",
+    mobilePos: "48% 48%",
   },
 ];
 
@@ -99,13 +98,13 @@ export function Hero() {
               className="group relative inline-flex items-center gap-3 bg-gold text-ink px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] shadow-[0_10px_40px_-12px_rgba(212,175,55,0.55)] hover:shadow-[0_18px_60px_-12px_rgba(212,175,55,0.8)] hover:-translate-y-0.5 hover:bg-champagne transition-all duration-500"
             >
               <MessageCircle size={16} className="transition-transform duration-500 group-hover:rotate-[-6deg]" />
-              Chat on WhatsApp
+              Let's Work Together
             </a>
             <a
-              href="#work"
+              href="#services"
               className="group relative inline-flex items-center gap-3 border border-foreground/40 text-foreground hover:border-foreground hover:text-foreground px-8 py-4 rounded-full text-xs uppercase tracking-[0.25em] bg-white/0 hover:bg-white/[0.06] hover:-translate-y-0.5 hover:shadow-[0_18px_60px_-20px_rgba(255,255,255,0.35)] backdrop-blur-sm transition-all duration-500"
             >
-              View Our Work
+              Explore Our Services
               <ArrowUpRight size={16} className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
