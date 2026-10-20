@@ -17,7 +17,7 @@ const services = [
   },
   {
     num: "02",
-    icon: Camera,
+    icon: Share2,
     title: "Social Media Management",
     image: socialImage,
     alt: "Creator producing branded social content on set",
@@ -26,7 +26,7 @@ const services = [
   },
   {
     num: "03",
-    icon: Share2,
+    icon: Video,
     title: "Professional Videography",
     image: videoImage,
     alt: "Lifestyle creator filming a short-form hospitality video",
@@ -35,7 +35,7 @@ const services = [
   },
   {
     num: "04",
-    icon: Target,
+    icon: Camera,
     title: "Professional Photography",
     image: photoImage,
     alt: "Beauty creator presenting a skincare product",
@@ -86,14 +86,14 @@ export function Services() {
                   {s.num}
                 </div>
 
-                <div className="col-span-3 lg:col-span-2 relative">
+                <div className="col-span-4 sm:col-span-3 lg:col-span-2 relative">
                   <img src={s.image} alt={s.alt} loading="lazy" width={1408} height={1008} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
                 </div>
 
-                <div className="col-span-8 lg:col-span-3 relative">
+                <div className="col-span-7 sm:col-span-8 lg:col-span-3 relative">
                   <div className="flex items-center gap-3">
                     <Icon size={18} className="text-gold" />
-                    <h3 className="font-display text-3xl lg:text-5xl text-foreground group-hover:translate-x-2 transition-transform duration-500">
+                    <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl text-foreground group-hover:translate-x-2 transition-transform duration-500">
                       {s.title}
                     </h3>
                   </div>

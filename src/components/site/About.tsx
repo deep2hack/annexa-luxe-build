@@ -1,4 +1,3 @@
-import { Counter } from "./Counter";
 import fashionCreator from "@/assets/campaign-fashion-creator.jpg";
 import beautyCreator from "@/assets/campaign-beauty-creator.jpg";
 
