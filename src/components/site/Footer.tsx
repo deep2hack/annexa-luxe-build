@@ -65,7 +65,7 @@ export function Footer() {
             href="https://www.linkedin.com/in/deepak-singh-395b97383?utm_source=share_via&utm_content=profile&utm_medium=member_android"
             target="_blank"
             rel="noreferrer"
-            className="inline-block text-champagne underline-grow transition-colors hover:text-gold"
+            className="inline-block text-champagne underline underline-offset-4 decoration-champagne/60 transition-colors hover:text-gold hover:decoration-gold"
           >
             Deepak Kumar
           </a>
